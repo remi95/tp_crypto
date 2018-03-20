@@ -17,9 +17,11 @@ def getCoinPrice(coin):
 
 
 while (True):
-    search = input('De quelle monnaie voulez-vous voir le prix ?\n"list" pour voir l\'ensemble des monnaies.)\n')
+    search = input('De quelle monnaie voulez-vous voir le prix ?\n"list" pour voir l\'ensemble des monnaies.\n"quit" pour quitter\n')
 
     if (search == 'list'):
         getList()
+    if (search == 'quit'):
+        exit()
     else:
         getCoinPrice(search)
